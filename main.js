@@ -43,7 +43,7 @@
     //  }
     
 // console.log(suggestTable(9)) 
-// task5 ????
+
 // task 6
 /*function checkDiscountMeet(name, age, numOrders, amounts) {
     let isRegular = false;
@@ -78,22 +78,22 @@ console.log(discountEligibility);*/
   console.log(isSmallShipment(50, 60, 40, 8, 5));*/
 
   //task 8
- /* function convertToText(number) {
-    const ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
-    const tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
+//   function convertToText(number) {
+//     const ones = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine"];
+//     const tens = ["", "", "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety"];
   
-    const tensDigit = Math.floor(number / 10);
-    const onesDigit = number % 10;
+//     const tensDigit = (number / 10) | 0;
+//     const onesDigit = number % 10;
     
-    if (tensDigit === 0) {
-      return ones[onesDigit];
-    } else if (onesDigit === 0) {
-      return tens[tensDigit];
-    } else {
-      return `${tens[tensDigit]} ${ones[onesDigit]}`;
-    }
-  }
-console.log(convertToText(15)) */
+//     if (tensDigit === 0) {
+//       return ones[onesDigit];
+//     } else if (onesDigit === 0) {
+//       return tens[tensDigit];
+//     } else {
+//       return `${tens[tensDigit]} ${ones[onesDigit]}`;
+//     }
+//   }
+// console.log(convertToText(15)) 
 
 //task 9
 /*function printDivisibleNumbers(number) {
@@ -102,19 +102,24 @@ console.log(convertToText(15)) */
         console.log(i);
       }
     }
-  }*/
-
-  //task 12
-  /*function sumOfDigits(code) {
-    let sum = 0;
-    for (let digit of code.toString()) {
-      sum += Number(digit);
-    }
-    return sum;
   }
-  let code = 12345;
-let codeSum = sumOfDigits(code);
-console.log(codeSum); */
+printDivisibleNumbers(5)*/
+
+//task 12
+// function sumOfDigits(code) {
+//   let sum = 0;
+//   while (code > 0) {
+//     sum += code % 10;
+//     code = (code - (code % 10)) / 10;
+//   }
+//   return sum;
+// }
+// const code = 12345;
+// const codeSum = sumOfDigits(code);
+// console.log(codeSum); 
+
+
+
 
   
 
