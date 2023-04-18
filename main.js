@@ -44,6 +44,47 @@
     
 // console.log(suggestTable(9)) 
 
+//task5
+/*function averageAnnualTemperature() {
+  let temp1 = +prompt("Enter temperature"); 
+  let temp2 = +prompt("Enter temperature");
+  let temp3 = +prompt("Enter temperature");
+  let highest, middle, lowest;
+  //
+  if (temp1 >= temp2 && temp1 >= temp3) {
+  highest = temp1;
+  if (temp2 >= temp3) {
+  middle = temp2;
+  lowest = temp3;
+  } else {
+  middle = temp3;
+  lowest = temp2;
+  }
+ } else if (temp2 >= temp1 && temp2 >= temp3) {
+  highest = temp2;
+  if (temp1 >= temp3) {
+  middle = temp1;
+  lowest = temp3;
+  } else {
+  middle = temp3;
+  lowest = temp1;
+  }
+ } else {
+  highest = temp3;
+  if (temp1 >= temp2) {
+  middle = temp1;
+  lowest = temp2;
+  } else {
+  middle = temp2;
+  lowest = temp1;
+}
+  }
+  console.log(highest, middle, lowest);
+}
+averageAnnualTemperature()*/
+
+
+
 // task 6
 /*function checkDiscountMeet(name, age, numOrders, amounts) {
     let isRegular = false;
@@ -104,6 +145,20 @@ console.log(discountEligibility);*/
     }
   }
 printDivisibleNumbers(5)*/
+//task 10
+function calculateDeposit() {
+  const initialAmount = +prompt("Enter the initial amount");
+  const durationYears = +prompt("Enter the duration in years");
+  const interestRate  = +prompt("Enter the interest rate in %") / 100;
+
+  let totalMoney = initialAmount;
+  for (let i=0; i< durationYears; i++){
+    totalMoney += initialAmount * interestRate;
+  }
+
+  return alert(totalMoney);
+}
+calculateDeposit();
 
 //task 12
 // function sumOfDigits(code) {
