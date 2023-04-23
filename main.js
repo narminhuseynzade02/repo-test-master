@@ -3,13 +3,13 @@
 //    console.log(a);
 //}
 // task1
-// function registrProcess() { 
-//     const lastName = prompt("Please write your last name:"); 
-//     const firstName = prompt("Please write your first name:"); 
-//     const email = prompt("Please write your email address:"); 
-//     return `${email} - ${lastName} ${firstName}`; 
-//   } 
-// console.log(registrProcess());
+/*const lastName = prompt("Please write your last name:"); 
+const firstName = prompt("Please write your first name:"); 
+const email = prompt("Please write your email address:"); 
+ function registrProcess(lastName, firstName, email) { 
+     return `${email} - ${lastName} ${firstName}`; 
+   } 
+ console.log(registrProcess(lastName, firstName, email));*/
 // task2
 // function calculator(){
 //     const distance = +prompt("Please write distance in km : ");
@@ -45,10 +45,10 @@
 // console.log(suggestTable(9)) 
 
 //task5
-/*function averageAnnualTemperature() {
-  let temp1 = +prompt("Enter temperature"); 
+/*  let temp1 = +prompt("Enter temperature"); 
   let temp2 = +prompt("Enter temperature");
   let temp3 = +prompt("Enter temperature");
+  function averageAnnualTemperature() {
   let highest, middle, lowest;
   //
   if (temp1 >= temp2 && temp1 >= temp3) {
@@ -89,6 +89,7 @@ averageAnnualTemperature()*/
 /*function checkDiscountMeet(name, age, numOrders, amounts) {
     let isRegular = false;
     let isOver60 = false;
+    let numHighAmountOrders = 0;
   
     let totalAmount = 0;
     for (let i = 0; i < numOrders; i++) {
@@ -102,14 +103,15 @@ averageAnnualTemperature()*/
       isOver60 = true;
     }
   
-    if (isRegular || isOver60) {
+    if (isRegular || (isOver60 && numHighAmountOrders > 0)) 
+ {
       return name + " is eligible for a discount.";
     } else {
       return name + " is not eligible for a discount.";
     }
   }
   
-console.log(discountEligibility);*/
+console.log(checkDiscountMeet(name, age, numOrders, amounts));*/
 
 //task 7
 /*function isSmallShipment(length, width, height, weight, distance) {
@@ -146,11 +148,11 @@ console.log(discountEligibility);*/
   }
 printDivisibleNumbers(5)*/
 //task 10
+/*
+const initialAmount = +prompt("Enter the initial amount");
+const durationYears = +prompt("Enter the duration in years");
+const interestRate  = +prompt("Enter the interest rate in %") / 100;
 function calculateDeposit() {
-  const initialAmount = +prompt("Enter the initial amount");
-  const durationYears = +prompt("Enter the duration in years");
-  const interestRate  = +prompt("Enter the interest rate in %") / 100;
-
   let totalMoney = initialAmount;
   for (let i=0; i< durationYears; i++){
     totalMoney += initialAmount * interestRate;
@@ -158,7 +160,7 @@ function calculateDeposit() {
 
   return alert(totalMoney);
 }
-calculateDeposit();
+calculateDeposit();*/
 
 //task 12
 // function sumOfDigits(code) {
@@ -172,6 +174,26 @@ calculateDeposit();
 // const code = 12345;
 // const codeSum = sumOfDigits(code);
 // console.log(codeSum); 
+//task 11
+/*function calculateLoyaltyPoints(orderNumber) {
+  let loyaltyPoints = 0;
+  let previous1 = 1; 
+  let previous2 = 1; 
+  
+  if (orderNumber == 1 || orderNumber == 2) {
+    loyaltyPoints = 1;
+  } else {
+    for (let i = 3; i <= orderNumber; i++) {
+      loyaltyPoints = previous1 + previous2;
+      previous2 = previous1;
+      previous1 = loyaltyPoints;
+    }
+  }
+  return loyaltyPoints;
+}
+
+console.log(calculateLoyaltyPoints(8)); // Output: 21*/
+
 
 
 
